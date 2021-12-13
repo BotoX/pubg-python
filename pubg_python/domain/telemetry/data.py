@@ -1,7 +1,7 @@
 import collections
 
 
-class TelemetryData(collections.MutableMapping):
+class TelemetryData(collections.abc.MutableMapping):
 
     def __init__(self, *args, **kwargs):
         self.store = dict()
